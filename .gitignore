@@ -1,5 +1,9 @@
 node_modules/
 .pnpm-store/
 dist/
+<<<<<<< HEAD
 .env
 *.log
+=======
+*.log
+>>>>>>> 89db93984e98d2f9abff9f28477d605a8172d953
