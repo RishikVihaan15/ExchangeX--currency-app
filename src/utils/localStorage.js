@@ -8,5 +8,9 @@ export function readStorage(key, fallback) {
 }
 
 export function writeStorage(key, value) {
-  localStorage.setItem(key, JSON.stringify(value));
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    console.warn(`Unable to save ${key} to localStorage`);
+  }
 }
